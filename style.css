@@ -30,6 +30,10 @@ header li a {
     text-decoration: none;
 }
 
+header li a:hover {
+    text-decoration: underline;
+}
+
 .container {
     width: 1366px;
     margin: 0 auto;
@@ -104,4 +108,14 @@ section h2 {
 
 #economy .articles article a {
     background-color: #ff9f1a;
+}
+#entertainment {
+    background-color: rgba(1, 13, 179,0.3);
+}
+
+#tecnology {
+    background-color: rgba(179, 1, 1, 0.3);
+}
+#tecnology .articles article a {
+    background-color: #ff1a1a;
 }
