@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container{
+    margin: 100px;
+}
+
+.error{
+    color: red;
+    border-color: red;
+    outline-color: red;
+    display: none;
+}
+
+.final-result{
+    display: none;
+}
