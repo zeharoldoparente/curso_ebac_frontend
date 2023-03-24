@@ -12,6 +12,7 @@ form.addEventListener('submit', function(e){
     
     if(numberOne.value<numbertwo.value){
         document.querySelector('.error').style.display = 'block';
+        document.querySelector('.final-result').style.display = 'none';
     }else {
         const containerMessageFinal = document.getElementsByClassName('.final-result');
         containerMessageFinal.innerHTML = messageFinal;
