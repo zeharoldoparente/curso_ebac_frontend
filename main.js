@@ -1,19 +1,15 @@
-const form = document.getElementById("calculate");
+const formulario = document.getElementById("formulario");
+const mensagem = document.getElementById("mensagem");
 
-let numberOne = document.getElementById("first-number");
-let numbertwo = document.getElementById("second-number");
+formulario.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
+  const campoA = parseInt(document.getElementById("campoA").value);
+  const campoB = parseInt(document.getElementById("campoB").value);
 
-  let result = numberOne.value - numbertwo.value;
-  const mensagemFinal = `O resultado da expressão é: <b>${result}</b> `;
-
-  if (numberOne.value < numbertwo.value) {
-    document.querySelector('.error').style.display = 'block';
-    document.querySelector('.final-result').style.display = 'none';
+  if (campoB > campoA) {
+    mensagem.textContent = "Formulário válido!";
   } else {
-    const containerMensagemFinal = document.querySelector(".final-result");
-    containerMensagemFinal.innerHTML = mensagemFinal;
+    mensagem.textContent = "Formulário inválido! Campo B deve ser maior que campo A.";
   }
 });
