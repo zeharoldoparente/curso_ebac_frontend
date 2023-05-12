@@ -1,8 +1,12 @@
-.container{
-  margin-top: 100px;
-  max-width: 100%;
+.container {
+   margin-top: 100px;
+   max-width: 100%;
 }
 
-button.btn{
-  margin-top: 20px;
+button.btn {
+   margin-top: 20px;
+}
+
+.space {
+   margin-top: 18px;
 }
